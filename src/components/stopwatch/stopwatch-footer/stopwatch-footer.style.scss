@@ -1,0 +1,33 @@
+@import "../../../scss/mixin.scss";
+@import "../../../scss/variables.scss";
+
+.s-footer{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    border-top: 1px solid $l-gray;
+    .s-controls{
+        display:flex;
+        .s-start,.s-reset{
+          @include center;
+          width:70px;
+          height:30px;  
+          border-radius: 2px;
+          
+        }
+        .s-start{
+            background-color: $blue;
+            color:$white; 
+        }
+        .s-reset{
+            border: 1px solid $l-gray;
+            color:$blue;
+            margin-left: 20px;
+        }
+    }
+    .s-resize{
+        @include center;
+        color:$l-gray;
+        font-size: 20px;
+    }
+}

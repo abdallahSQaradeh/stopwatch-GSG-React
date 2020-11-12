@@ -1,0 +1,8 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixin.scss";
+.header{
+    display:flex;
+    height:70px;
+    border-bottom: 1px solid $l-gray;
+    @include center;
+}

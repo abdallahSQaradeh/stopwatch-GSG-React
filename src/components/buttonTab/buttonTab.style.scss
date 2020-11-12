@@ -1,0 +1,14 @@
+@import "../../scss/mixin.scss";
+@import "../../scss//variables.scss";
+.button-tab{
+    width:50%;
+              @include center;
+              &:hover{
+                cursor: pointer;
+              }
+              height:100%;
+}
+.active{
+    color:$blue;
+    border-bottom: 2px solid $blue;
+}
