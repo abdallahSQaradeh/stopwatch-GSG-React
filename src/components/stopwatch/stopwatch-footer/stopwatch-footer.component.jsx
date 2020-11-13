@@ -7,8 +7,8 @@ const stopwatch_footer = (props)=>
     return (
         <div className="s-footer">
         <div className="s-controls">
-          <div className="s-start" >Start</div>
-          <div className="s-reset" >Reset</div>
+          <div className="s-start" onClick={props.start} >{`${props.reset_flag?'Start':'stop' }`}</div>
+          <div className="s-reset" onClick={props.reset}>Reset</div>
         </div>
         <div className="resize"><ion-icon name="expand-outline"></ion-icon></div>
       </div>
